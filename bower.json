@@ -1,0 +1,19 @@
+{
+  "name": "QDigest",
+  "version": "1.0.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "2.1.11"
+  },
+  "devDependencies": {
+    "expect": "0.2.0",
+    "expectjs": "git@github.com:LearnBoost/expect.js.git#564e155e60baff5196f4560a36c986d922143c82",
+    "mocha": "1.19.0"
+  }
+}
