@@ -1,6 +1,8 @@
 # QDigest
 QDigest data structure for answering approximate quantile queries.
 
+![QDigest tree](https://github.com/podlipensky/QDigest/blob/master/assets/img/qdigest.png)
+
 Although statistical analysis (like find top k visited urls) usually done on the server side (which makes a lot of sense), this particular data structure could be really useful on client side as well.
 For example, if you want to find top k elements user hovered during his session. One approach would be to count hovers on all elements and send an array to the server. But it will be a lot of data, and most likely big part of it will be just noise. So this is the part where QDigest comes into play - we can not only find top k elements for current session, but also compress the data and send it to the server (where we can answer top-k query for all sessions).
 Please read the paper about [QDigest properties and error calculations](http://www.inf.fu-berlin.de/lehre/WS11/Wireless/papers/AgrQdigest.pdf)
